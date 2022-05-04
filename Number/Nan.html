@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSNUMBER</title>
+</head>
+<body>
+        <p id="display1"></p>
+        <p id="display2"></p>
+        <p id="display3"></p>
+        <p id="display4"></p>
+        <p id="display5"></p>
+        <p id="display6"></p>
+        <p id="display7"></p>
+        <p id="display8"></p>
+        <p id="display9"></p>
+        
+        
+        <script>
+         
+            let number1 = "500";
+            let number2 = "300";
+            let number3 = number1 - number2;
+            let number4 = number1 + number2;
+            let number5 = number1 * number2;
+            let number6 = number1 / number2;
+            let number7 = 100;
+            let string1 = "Anup"
+            let number8 = number7/string1;
+            
+            let nan1=NaN;
+         let number9 = "100";
+         let number10 = nan1+number9;
+         let number11 = 2/0;
+         let number12 = -2/0;
+         let number13 = new Number(125);
+
+            document.getElementById("display1").innerHTML = number3;
+            document.getElementById("display2").innerHTML = number4;
+            document.getElementById("display3").innerHTML = number5;
+            document.getElementById("display4").innerHTML = number6;
+            document.getElementById("display5").innerHTML = isNaN(number8);
+            document.getElementById("display6").innerHTML = number10;
+            document.getElementById("display7").innerHTML = number11;
+            document.getElementById("display8").innerHTML = number12;
+            document.getElementById("display9").innerHTML = typeof number13;
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="dis"></p>
+    <p id="dis1"></p>
+    <p id="dis2"></p>
+    <script>
+        class car{
+            constructor(company,category,model,color,varient,price){
+                this.company = company; 
+                this.category = category;
+                this.model = model;
+                this.color = color;
+                this.varient = varient;
+                this.price = price;
+        
+            }
+        }
+        function objrefer() {
+            tataCar = new car("tata","suv","nexon","red","petrol",1050000);
+            return tataCar.company + tataCar.category;
+        }
+    
+        mahindraCar = new car("mahindra","Thar","si","black","petrol",1250000);
+
+    </script>
+    <button type="Submit" onclick=document.getElementById("dis").innerHTML=mahindraCar.category>Mahindra category</button>
+    <button type="Submit" onclick=document.getElementById("dis1").innerHTML=mahindraCar.price>Mahindra Price </button>
+    <button type="submit" onclick=document.getElementById("dis2").innerHTML=objrefer1()>Show Detail</button>
+    
+    <noscript>
+        This is not supported
+    </noscript>
+</body>
+</html>

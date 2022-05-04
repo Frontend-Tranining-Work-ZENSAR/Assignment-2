@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="dispdate"></p>
+    <p id="dispdate1"></p>
+    <p id="dispdate2"></p>
+    <p id="dispdate3"></p>
+   
+    <script>
+        let date1=new Date();
+        
+        document.getElementById("dispdate").innerHTML=date1.setFullYear(2023);
+        
+        document.getElementById("dispdate1").innerHTML=date1.getMonth();
+        
+        document.getElementById("dispdate2").innerHTML=date1.getUTCDate();
+        document.getElementById("dispdate3").innerHTML=date1.setDate(28);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="display"></p>
+    <script>
+        const trainee ={
+                      fullName: function(country){
+                return this.firstName + "  " + this.lastName + "   " + country;
+            }
+        }
+        const trainee1={
+
+            firstName: "Anup",
+            lastName:"Deshmukh",
+        }
+        const trainee2={
+
+            firstName: "Vaibhav",
+            lastName:"Talele",
+        }
+        document.getElementById("display").innerHTML=trainee.fullName.call(trainee2,"India");
+    </script>
+       
+</body>
+</html>
